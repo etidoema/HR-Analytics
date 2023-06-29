@@ -23,5 +23,16 @@
 
 Data cleaning was performed per table. The table appeared to be clean. The quality of each column is 100% with no error or nulls. Below is a preview of the tables:
 
-![]()
+![](dimeducationlevel.png)  ![](dimemployee.png)  ![](dimratinglevel.png)  ![](dimsatisfiedlevel.png) ![](factpermancerating.png)
+
+
+## Data Model Design
+  The data required for this analysis are located in various tables. Therfore, appropriate modelling is required. A star Schema is designed with the FactPerformance table representing the fact table containing all redundant data, and to which other dimension tables are modelled or connected to, using the column that is common. FactPerformance Table has been modelled with:
+  
+![](Data_model.png)  
+
+
+
+
+
 
