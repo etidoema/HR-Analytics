@@ -23,3 +23,5 @@
 
 Data cleaning was performed per table. The table appeared to be clean. The quality of each column is 100% with no error or nulls. Below is a preview of the tables:
 
+![]()
+
