@@ -29,7 +29,7 @@ Data cleaning was performed per table. The table appeared to be clean. The quali
 ## Data Model Design
   The data required for this analysis are located in various tables. Therfore, appropriate modelling is required. A star Schema is designed with the FactPerformance table representing the fact table containing all redundant data, and to which other dimension tables are modelled or connected to, using the column that is common. FactPerformance Table has been modelled with:
   
-![](Data_model.png)  
+![](Data_Model.png)  
 
 
 
