@@ -114,6 +114,36 @@ We now have a good understanding of the general hiring trends, its important to 
 
 ![](employees_by_marital_status.png)  
 
-![](Active_employees_by_department_and_jobrole.png)  
+![](employees_by_ethnicity.png)  
+
+### Performance Tracker: Part 1
+
+We have already created two pages of metrics that help us understand our general HR status as well where we sit from a diversity and inclusion perspective.
+	Now the HR team would like to have a vies where they can continually track an individual employees performance scores based on their yearly performance reviews.
+
+1) We will create a new page in the report called “Performance Tracker”.
+2) I will create a a calculated column ‘FULLNAME” in the DimEmployee table that combines FirstName and LastName
+3) I will create a slicer that will be able to filter the report page based on the employee’s Fullname.
+4) I will create a card visual that displays the selected employees hiredate
+5) I will create a measure LastReviewDate that gets the last performance review for the selected individual
+6) I will create a measure NextReviewDate that calculates when the next review is due. It should be 365 dats after the LastReviewDate.
+7) I will display the measure on a card visual.
+8) Lets look for the next review date for Estelle chung for functionality purpose.
+
+
+
+### Key insights uncovered
+1)	Majority of employees are between 20-29 years old
+2)	Currently, Atlas Labs employ 2.7% more women than women
+Employees who identify as 
+
+1)	Non-binary make up 8.5% of total employees
+2)	White have the highest average salary
+3)	Mixed or multiple ethnic groups have one of the lowest salaries
+
+
+
+
+
 
 
