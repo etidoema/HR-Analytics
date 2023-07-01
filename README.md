@@ -4,7 +4,7 @@
 ## Introduction
 
   The core goal of this case study is to build a report using a fictitious dataset from a tech company atlas lab, the HR team want to be able to monitor key metrics on employees
-  
+---  
 ### Primary goal:
 Monitor key HR metrics on employees
 ### Secondary goal:  
@@ -27,7 +27,7 @@ Understand what factors impact attrition
 
 
   “Fact” OR “Dim” were added at the beginning of each table name, depending on its type. All newly loaded tables were reviewed , and the columns are correctly formatted as text, numbers , and dates as expected in the metadata sheet.
-
+---
 ## Data Transformation
 
 Data cleaning was performed per table. The table appeared to be clean. The quality of each column is 100% with no error or nulls. Below is a preview of the tables:
@@ -42,7 +42,7 @@ Data cleaning was performed per table. The table appeared to be clean. The quali
 --- 
 ![](factpermancerating.png)
 
-
+---
 ## Date dimension and relating tables
   In a Power BI report, a dedicated date table is highly recommended for accurate date and time reporting. Modelling data is one of the four pillars of Power Bi report development as it enables us to connect different data tables together in the form of a star or snow schema.
 
@@ -50,7 +50,7 @@ Data cleaning was performed per table. The table appeared to be clean. The quali
 
 ## Data Model Design
   The data required for this analysis are located in various tables. Therfore, appropriate modelling is required. A star Schema is designed with the FactPerformance table representing the fact table containing all redundant data, and to which other dimension tables are modelled or connected to, using the column that is common. FactPerformance Table has been modelled. Having a many to one or one to many relationship with its dimension tables. Some relationship in the model are not active. This was activated using USERELATIONSHIP() function in DAX.  
-  
+---  
 ![](Data_Model.png)  
 
 
@@ -65,13 +65,13 @@ Data cleaning was performed per table. The table appeared to be clean. The quali
 In a Power BI report, a dedicated date table is highly recommended for accurate date and time reporting. Modelling data is one of the four pillars of Power Bi report development as it enables us to connect different data tables together in the form of a star or snow schema.
 
 
-
+---
 ## Data Analyst / Visualization
 
 
  The leadership team at Atlas Labs is looking to have visibility on high-level metrics about the sate of its employees, in particular, the organization is looking to understand the attrition at the company.
 My goal is to explore the available data and calculate this key measure that will be useful throughout the case study.
-
+---
 ### Exloring the Data
 
 1) Create a new empty table called _Measure
@@ -82,7 +82,7 @@ My goal is to explore the available data and calculate this key measure that wil
 ![](Overview.png)  
 
 
-
+---
 ### Hiring Trends over time
 
   The head of HR request for a report to be created that enables them to have a view of the whole organization’s key metrics. This will enable them to be able to benchmark their HR metrics against organizations across their industry as well as understand how their employees are performing.
@@ -90,9 +90,11 @@ I would start by analyzing the hiring trends over time to see where the biggest 
 We will be looking to activate relationships between tables. In this case , DimDate already has an active relationship with FactPerformanceRating. Therefore we will need to utilize USERRELATIOSHIP() to count the number of employees by date.
 
 Step 1 : Create a stacked column chart to show TotalEmployees by Date, the result wont be insightful, simply because it has an inactive relationship. We will activate it.
+---
 Step 2 : We will replace the TotalEmployees in our chart with our newly created TotalEmployeesDate
+---
 Step 3 : Attrition to be added to the chart to see the split of employees by active vs inactive.
-
+---
 
 ![](Employees_hiring_trend.png)  
 
@@ -100,9 +102,9 @@ Step 3 : Attrition to be added to the chart to see the split of employees by act
 ### Analyzing departments and job roles.
 The HR team is working with department managers to understand their teams and what type of typical roles they are hiring into the organization. This will enable every department to plan for new hiring requests in the future.
 
-	Step 1 : Create a Clustered bar chart to show ActiveEmployees by Department and Job role.
+Step 1 : Create a Clustered bar chart to show ActiveEmployees by Department and Job role.
 
-
+---
 ![](Active_employees_by_department_and_jobrole.png)  
 
 ### Key Insights Uncovered
@@ -130,7 +132,7 @@ We now have a good understanding of the general hiring trends, its important to 
 
 
 ![](employees_by_marital_status.png)  
-
+---
 ![](employees_by_ethnicity.png)  
 
 ### Performance Tracker: Part 1
@@ -148,7 +150,7 @@ We have already created two pages of metrics that help us understand our general
 8) Lets look for the next review date for Estelle chung for functionality purpose.
 
 
-
+---
 ### Key insights uncovered
 1)	Majority of employees are between 20-29 years old
 2)	Currently, Atlas Labs employ 2.7% more women than women
